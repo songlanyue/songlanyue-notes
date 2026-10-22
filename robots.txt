@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 站点地图（换域名后把这里一起改掉）
+Sitemap: http://8.148.29.209/sitemap.xml
