@@ -33,7 +33,8 @@
   }
 
   var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
-  applyTheme(readSavedTheme() || (prefersDark && prefersDark.matches ? 'dark' : 'light'));
+  // 站点默认深色工业风；用户手动切换过则尊重其选择
+  applyTheme(readSavedTheme() || 'dark');
 
   if (themeToggle) {
     themeToggle.addEventListener('click', function () {
