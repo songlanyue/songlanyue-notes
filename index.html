@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>陈文杰 · 个人网站</title>
+  <meta name="description" content="陈文杰的个人网站：计算机专业学生，热爱前端开发与 AI 应用，记录学习、项目与实践。" />
+  <meta name="author" content="陈文杰" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 滚动进度条 -->
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- 顶部导航 -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="返回首页">
+        <span class="brand-mark">CWJ</span>
+        <span class="brand-text">陈文杰</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="主导航">
+        <a class="nav-link is-active" href="#home">首页</a>
+        <a class="nav-link" href="#about">关于我</a>
+        <a class="nav-link" href="#skills">技能</a>
+        <a class="nav-link" href="#projects">作品</a>
+        <a class="nav-link" href="#journey">经历</a>
+        <a class="nav-link" href="#contact">联系</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="切换深色/浅色主题" title="切换主题">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"
+                  fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M20 14.2A8.2 8.2 0 1 1 9.8 4a6.6 6.6 0 0 0 10.2 10.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 首屏 -->
+    <section class="hero" id="home">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            学号 2026116040164
+          </p>
+          <h1>
+            你好，我是<br />
+            <span class="gradient-text">陈文杰</span>
+          </h1>
+          <p class="hero-sub">
+            计算机专业学生，专注于 <strong>Web 前端开发</strong> 与 <strong>AI 应用实践</strong>。
+            喜欢把想法做成能跑起来的东西 —— 从写第一行 HTML，到把它部署到自己的服务器上。
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">
+              查看我的作品
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">联系我</a>
+          </div>
+
+          <ul class="hero-meta">
+            <li><strong>3</strong><span>个人项目</span></li>
+            <li><strong>20+</strong><span>代码提交</span></li>
+            <li><strong>1 台</strong><span>云服务器</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card-head">
+              <span class="traffic t1"></span><span class="traffic t2"></span><span class="traffic t3"></span>
+              <span class="code-file">index.html</span>
+            </div>
+            <pre class="code-body"><code><span class="c-tag">&lt;section</span> <span class="c-attr">class</span>=<span class="c-str">"hero"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;h1&gt;</span>陈文杰<span class="c-tag">&lt;/h1&gt;</span>
+  <span class="c-tag">&lt;p&gt;</span>把想法写成代码<span class="c-tag">&lt;/p&gt;</span>
+  <span class="c-tag">&lt;a</span> <span class="c-attr">href</span>=<span class="c-str">"#projects"</span><span class="c-tag">&gt;</span>
+    看看我做了什么
+  <span class="c-tag">&lt;/a&gt;</span>
+<span class="c-tag">&lt;/section&gt;</span></code></pre>
+          </div>
+
+          <div class="float-chip chip-top">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+              <path d="M12 3l2.6 5.6L21 9.5l-4.5 4.4L17.6 20L12 16.9L6.4 20l1.1-6.1L3 9.5l6.4-.9z"
+                    fill="currentColor"/>
+            </svg>
+            AI 辅助开发
+          </div>
+          <div class="float-chip chip-bottom">
+            <span class="pulse"></span>
+            Nginx 已上线
+          </div>
+        </div>
+      </div>
+</section>
+
+    <!-- 关于我 -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">01 / ABOUT</span>
+          <h2 class="section-title">关于我</h2>
+          <p class="section-desc">一个喜欢折腾的学生，正在把自己学到的东西一件件变成作品。</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="avatar-wrap">
+              <img src="assets/avatar.svg" alt="陈文杰的头像插画" width="120" height="120" loading="lazy" />
+            </div>
+            <h3>陈文杰</h3>
+            <p class="muted">计算机专业 · 2026 级</p>
+            <ul class="about-list">
+              <li><span>方向</span>Web 前端 / AI 应用</li>
+              <li><span>在学</span>JavaScript、Linux、Nginx</li>
+              <li><span>坐标</span>中国 · 在校学生</li>
+            </ul>
+            <a class="link-arrow" href="#contact">
+              一起交流
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                <path d="M8 16l8-8M9 8h7v7" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="about-text reveal">
+            <p>
+              我是陈文杰，一名计算机专业的学生。最开始写网页，是因为想把喜欢的东西放在一个属于自己的页面上；
+              后来慢慢发现，从设计、写代码到买服务器、配 Nginx，把整条链路打通的那一刻才是最有成就感的。
+            </p>
+            <p>
+              平时我会用 AI 辅助梳理需求、生成初版结构，再自己逐行读代码、改样式、调交互。
+              我相信工具能加速开始，但真正决定质量的是对细节的耐心 —— 一行间距、一个过渡、一次首屏加载。
+            </p>
+            <p>
+              这个站点就是我的练习场：纯手写的 HTML / CSS / JS，没有任何框架，没有构建步骤，
+              部署在一台按量付费的云服务器上，用 Nginx 提供服务，代码托管在公开仓库里。
+            </p>
+
+            <div class="facts">
+              <div class="fact">
+                <span class="fact-num">100%</span>
+                <span class="fact-label">手写代码，零框架</span>
+              </div>
+              <div class="fact">
+                <span class="fact-num">≥ 5</span>
+                <span class="fact-label">Git 提交记录</span>
+              </div>
+              <div class="fact">
+                <span class="fact-num">24h</span>
+                <span class="fact-label">从开发到上线</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技能 -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">02 / SKILLS</span>
+          <h2 class="section-title">技能与工具</h2>
+          <p class="section-desc">会用的、正在学的，都列在这里 —— 诚实比好看重要。</p>
+        </div>
+
+        <div class="cards-4">
+          <article class="card skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13 5l-2 14" fill="none" stroke="currentColor"
+                      stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>前端开发</h3>
+            <p class="muted">语义化 HTML、响应式布局、CSS 变量与动画，能独立还原设计稿。</p>
+            <ul class="tags">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Flex / Grid</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <rect x="3.5" y="4.5" width="17" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M8 20h8M12 16.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>后端与脚本</h3>
+            <p class="muted">能写简单接口与数据处理脚本，理解 HTTP 与前后端数据流。</p>
+            <ul class="tags">
+              <li>Python</li><li>Node.js</li><li>REST API</li><li>JSON</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path d="M6 3.5v6a3 3 0 0 0 3 3h6a3 3 0 0 1 3 3v5" fill="none" stroke="currentColor"
+                      stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="6" cy="3.5" r="2" fill="currentColor"/>
+                <circle cx="18" cy="20.5" r="2" fill="currentColor"/>
+                <circle cx="18" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <h3>工具与协作</h3>
+            <p class="muted">Git 版本管理、命令行操作、VS Code 调试，习惯写 README。</p>
+            <ul class="tags">
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>Markdown</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path d="M4 15.5V7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v8a2.5 2.5 0 0 1-2.5 2.5H9l-5 3.5z"
+                      fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M8.5 11.5h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>部署与运维</h3>
+            <p class="muted">云服务器初始化、Nginx 反向代理与静态站点配置、SSH 与日志排查。</p>
+            <ul class="tags">
+              <li>Linux</li><li>Nginx</li><li>SSH</li><li>systemd</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 作品 -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">03 / WORKS</span>
+          <h2 class="section-title">作品</h2>
+          <p class="section-desc">按时间倒序，都是自己动手做的；每个都开源在仓库里。</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project-cover cover-1" aria-hidden="true">
+              <span class="cover-badge">Featured</span>
+              <div class="cover-ui">
+                <span class="ui-bar"></span>
+                <span class="ui-bar short"></span>
+                <span class="ui-block"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>个人网站</h3>
+                <span class="project-year">2026</span>
+              </div>
+              <p class="muted">
+                你现在看到的这个页面。纯手写 HTML / CSS / JS，响应式布局、深色模式与滚动动效，
+                部署在云服务器 + Nginx 上。
+              </p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Nginx</li>
+              </ul>
+              <div class="project-links">
+                <a href="#home">在线访问</a>
+                <a href="#" rel="noopener">源码仓库</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-cover cover-2" aria-hidden="true">
+              <div class="cover-ui">
+                <span class="ui-row"><i class="tick on"></i><span class="line"></span></span>
+                <span class="ui-row"><i class="tick on"></i><span class="line"></span></span>
+                <span class="ui-row"><i class="tick"></i><span class="line"></span></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>待办清单</h3>
+                <span class="project-year">2026</span>
+              </div>
+              <p class="muted">
+                一个轻量的任务管理工具，支持添加、勾选、筛选与本地持久化，
+                用原生 JS 实现数据驱动渲染，无任何依赖。
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li><li>localStorage</li><li>CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" rel="noopener">在线访问</a>
+                <a href="#" rel="noopener">源码仓库</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-cover cover-3" aria-hidden="true">
+              <div class="cover-chart">
+                <span style="--h: 40%"></span>
+                <span style="--h: 62%"></span>
+                <span style="--h: 48%"></span>
+                <span style="--h: 78%"></span>
+                <span style="--h: 66%"></span>
+                <span style="--h: 92%"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>数据可视化小站</h3>
+                <span class="project-year">2025</span>
+              </div>
+              <p class="muted">
+                把一份公开数据集清洗后用图表呈现，练习 Python 数据处理与前端图表渲染的配合。
+              </p>
+              <ul class="tags">
+                <li>Python</li><li>Pandas</li><li>Canvas</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" rel="noopener">在线访问</a>
+                <a href="#" rel="noopener">源码仓库</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 经历 -->
+    <section class="section section-alt" id="journey">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">04 / JOURNEY</span>
+          <h2 class="section-title">学习经历</h2>
+          <p class="section-desc">从第一次打开编辑器，到现在把网站推上服务器。</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-body">
+              <span class="tl-date">2025 · 秋</span>
+              <h3>开始接触编程</h3>
+              <p class="muted">从 C 语言和 Python 入门，第一次理解「程序」是如何把输入变成输出的。</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-body">
+              <span class="tl-date">2026 · 春</span>
+              <h3>转向 Web 前端</h3>
+              <p class="muted">用 HTML / CSS 复刻了第一个页面，开始学习 JavaScript 与浏览器调试。</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-body">
+              <span class="tl-date">2026 · 秋</span>
+              <h3>完成部署闭环</h3>
+              <p class="muted">购买云服务器、配置 Nginx、把代码推上公开仓库，跑通完整上线流程。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <span class="section-kicker">05 / CONTACT</span>
+          <h2 class="section-title">聊聊？</h2>
+          <p class="section-desc">
+            对前端、部署或者我的项目感兴趣，欢迎随时来信。通常我会在一天内回复。
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:2026116040164@example.com">
+              发邮件给我
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <rect x="3" y="5.5" width="18" height="13" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3.6 7l8.4 6 8.4-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="https://gitee.com/" target="_blank" rel="noopener">Gitee</a>
+          </div>
+
+          <p class="contact-note muted">
+            学号 2026116040164 · 陈文杰 · 本网站由本人独立开发并部署
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> 陈文杰 · 保留所有权利</p>
+      <p class="muted">Built with HTML / CSS / JavaScript · Deployed on Nginx</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+      <path d="M12 19V6M6 12l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
