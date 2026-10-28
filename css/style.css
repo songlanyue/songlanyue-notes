@@ -321,6 +321,62 @@ html[data-theme="light"] .icon-sun { display: none; }
   pointer-events: none;
 }
 
+/* ---------- 角色插画 · 景深装饰 ---------- */
+.hero-deco {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-deco i {
+  position: absolute;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  filter: blur(14px) saturate(115%);
+  opacity: .13;
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 30%, transparent 70%);
+  mask-image: radial-gradient(circle at 50% 50%, #000 30%, transparent 70%);
+  mix-blend-mode: screen;
+  border-radius: 50%;
+  transform: translate3d(calc(var(--px, 0px) * var(--k, 1)), calc(var(--py, 0px) * var(--k, 1)), 0);
+  transition: transform .7s cubic-bezier(.22, .8, .3, 1);
+  will-change: transform;
+}
+
+.deco-a {
+  width: 44vw; height: 44vw;
+  left: -14vw; top: 10vh;
+  background-image: url("../assets/deco/deco1.jpg");
+  --k: 1;
+}
+
+.deco-b {
+  width: 30vw; height: 30vw;
+  right: 1vw; top: 20vh;
+  background-image: url("../assets/deco/deco2.jpg");
+  --k: -1.5;
+  opacity: .11;
+}
+
+.deco-c {
+  width: 26vw; height: 26vw;
+  right: 26vw; bottom: -12vh;
+  background-image: url("../assets/deco/deco3.jpg");
+  --k: .8;
+  opacity: .09;
+}
+
+@media (max-width: 760px) {
+  .hero-deco i { opacity: .09; filter: blur(22px) saturate(110%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-deco i { transition: none; transform: none; }
+}
+
 .blob-1 {
   width: 420px;
   height: 420px;
@@ -1103,6 +1159,32 @@ html[data-theme="light"] .card:hover { background: #ffffff; }
 }
 
 .contact-card .section-kicker { margin-bottom: 12px; }
+
+/* 联系区角落的吉祥物：右侧留白处的景深前景 */
+.contact-mascot {
+  position: absolute;
+  right: 18px;
+  bottom: 12px;
+  width: 200px;
+  height: auto;
+  opacity: .95;
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, .5));
+  transform: translateY(6px);
+  transition: transform .8s cubic-bezier(.22, .8, .3, 1);
+  pointer-events: none;
+}
+
+.contact-card:hover .contact-mascot { transform: translateY(0); }
+
+@media (max-width: 980px) {
+  .contact-mascot {
+    position: static;
+    display: block;
+    margin: 26px auto 0;
+    width: 150px;
+    transform: none;
+  }
+}
 
 .contact-card .section-desc {
   margin-inline: auto;

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" role="img" aria-labelledby="mascotTitle mascotDesc">
+  <title id="mascotTitle">松揽月笔记 · 吉祥物</title>
+  <desc id="mascotDesc">原创卡通形象：蓝紫色短发、红瞳、琥珀色双角、深蓝连帽卫衣。</desc>
+
+  <defs>
+    <linearGradient id="hairGrad" x1="0.15" y1="0" x2="0.75" y2="1">
+      <stop offset="0" stop-color="#5f71cf" />
+      <stop offset="0.5" stop-color="#3d4ba2" />
+      <stop offset="1" stop-color="#262e6a" />
+    </linearGradient>
+    <linearGradient id="hairBack" x1="0.1" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#313d80" />
+      <stop offset="1" stop-color="#1b2149" />
+    </linearGradient>
+    <linearGradient id="hornGrad" x1="0" y1="1" x2="0.2" y2="0">
+      <stop offset="0" stop-color="#7d3f16" />
+      <stop offset="0.5" stop-color="#c0803c" />
+      <stop offset="1" stop-color="#e8b877" />
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#35456f" />
+      <stop offset="0.6" stop-color="#1e2745" />
+      <stop offset="1" stop-color="#12182b" />
+    </linearGradient>
+    <radialGradient id="irisGrad" cx="0.42" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ff8a94" />
+      <stop offset="0.45" stop-color="#e0344f" />
+      <stop offset="1" stop-color="#8a1130" />
+    </radialGradient>
+    <radialGradient id="blushGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff8f9a" stop-opacity="0.6" />
+      <stop offset="1" stop-color="#ff8f9a" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde5d6" />
+      <stop offset="1" stop-color="#f6cdb8" />
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+
+  <ellipse cx="180" cy="402" rx="92" ry="11" fill="#070a10" opacity="0.35" filter="url(#softShadow)" />
+
+  <!-- 后发（齐肩） -->
+  <path d="M180 54C112 54 78 100 78 162c0 54 8 98 18 126 4 12 18 12 22 0 6-20 4-50 0-72 14 18 36 30 62 30s48-12 62-30c-4 22-6 52 0 72 4 12 18 12 22 0 10-28 18-72 18-126 0-62-34-108-102-108z" fill="url(#hairBack)" />
+
+  <!-- 双角 -->
+  <path d="M138 92c-14-9-25-25-28-43-2-11 11-18 18-9 14 15 22 31 23 45 1 9-9 14-13 7z" fill="url(#hornGrad)" />
+  <path d="M222 92c14-9 25-25 28-43 2-11-11-18-18-9-14 15-22 31-23 45-1 9 9 14 13 7z" fill="url(#hornGrad)" />
+
+  <!-- 卫衣 -->
+  <path d="M180 248c-34 0-60 11-69 32-8 17-12 42-14 71-1 12 8 21 20 21h126c12 0 21-9 20-21-2-29-6-54-14-71-9-21-35-32-69-32z" fill="url(#hoodieGrad)" />
+  <path d="M134 258c12 18 28 28 46 28s34-10 46-28c-14 7-30 11-46 11s-32-4-46-11z" fill="#0d1220" opacity="0.85" />
+  <path d="M180 282v80" stroke="#090e1a" stroke-width="6" stroke-linecap="round" />
+  <path d="M180 282v80" stroke="#41548a" stroke-width="2" stroke-linecap="round" />
+  <path d="M138 318h30" stroke="#e8963a" stroke-width="5" stroke-linecap="round" />
+  <path d="M192 318h30" stroke="#e8963a" stroke-width="5" stroke-linecap="round" />
+  <path d="M180 298l5.4 11 12.1 1.7-8.8 8.5 2.1 12-10.8-5.7-10.8 5.7 2.1-12-8.8-8.5 12.1-1.7z" fill="#e8963a" />
+
+  <!-- 肩线与袖口 -->
+  <path d="M132 262c6 10 8 22 6 34" stroke="#41548a" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5" />
+  <path d="M228 262c-6 10-8 22-6 34" stroke="#41548a" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5" />
+  <path d="M108 320c-6 14-9 30-10 46" stroke="#2a3760" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6" />
+  <path d="M252 320c6 14 9 30 10 46" stroke="#2a3760" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6" />
+
+  <!-- 脸 -->
+  <path d="M180 76c-47 0-78 32-78 80 0 36 11 64 30 80 14 12 30 18 48 18s34-6 48-18c19-16 30-44 30-80 0-48-31-80-78-80z" fill="url(#skinGrad)" />
+  <ellipse cx="102" cy="178" rx="9" ry="13" fill="#f3ccb8" />
+  <ellipse cx="258" cy="178" rx="9" ry="13" fill="#f3ccb8" />
+
+  <!-- 刘海：整块发盖 + 锯齿发梢 -->
+  <path d="M180 66c-52 0-84 34-84 84l0 26 14-14 12 18 10-24 12 20 10-24 12 20 10-24 12 20 10-24 12 20 10-24 12 20 10-24 12 18 14 14 0-26c0-50-32-84-84-84z" fill="url(#hairGrad)" />
+
+  <!-- 两侧鬓发（贴脸） -->
+  <path d="M112 136c-8 30-8 68-2 96 2 10 14 11 17 1 5-18 5-48 2-72-2-14-5-24-8-30-3-6-8-5-9 5z" fill="url(#hairGrad)" />
+  <path d="M248 136c8 30 8 68 2 96-2 10-14 11-17 1-5-18-5-48-2-72 2-14 5-24 8-30 3-6 8-5 9 5z" fill="url(#hairGrad)" />
+
+  <!-- 发丝高光 -->
+  <path d="M126 116c10-16 24-26 40-30" stroke="#9aacef" stroke-width="6" stroke-linecap="round" opacity="0.45" fill="none" />
+  <path d="M232 104c10 7 17 16 21 27" stroke="#9aacef" stroke-width="4" stroke-linecap="round" opacity="0.3" fill="none" />
+
+  <!-- 眉毛 -->
+  <path d="M134 160c8-5 18-5 26-2" stroke="#2a3468" stroke-width="4" stroke-linecap="round" fill="none" />
+  <path d="M226 160c-8-5-18-5-26-2" stroke="#2a3468" stroke-width="4" stroke-linecap="round" fill="none" />
+
+  <!-- 眼睛 -->
+  <ellipse cx="147" cy="194" rx="21" ry="25" fill="#ffffff" />
+  <ellipse cx="213" cy="194" rx="21" ry="25" fill="#ffffff" />
+  <ellipse cx="148" cy="196" rx="15" ry="19" fill="url(#irisGrad)" />
+  <ellipse cx="212" cy="196" rx="15" ry="19" fill="url(#irisGrad)" />
+  <ellipse cx="148" cy="199" rx="7" ry="10" fill="#3f0a17" />
+  <ellipse cx="212" cy="199" rx="7" ry="10" fill="#3f0a17" />
+  <circle cx="142" cy="187" r="6" fill="#ffffff" />
+  <circle cx="206" cy="187" r="6" fill="#ffffff" />
+  <circle cx="154" cy="205" r="3" fill="#ffc0c8" opacity="0.9" />
+  <circle cx="218" cy="205" r="3" fill="#ffc0c8" opacity="0.9" />
+  <path d="M126 184c6-10 16-16 27-16" stroke="#25161f" stroke-width="4.5" stroke-linecap="round" fill="none" />
+  <path d="M234 184c-6-10-16-16-27-16" stroke="#25161f" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+  <!-- 腮红 -->
+  <ellipse cx="122" cy="218" rx="17" ry="10" fill="url(#blushGrad)" />
+  <ellipse cx="238" cy="218" rx="17" ry="10" fill="url(#blushGrad)" />
+
+  <!-- 鼻子与嘴 -->
+  <path d="M180 214v4" stroke="#dca893" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M172 230c3 5 6 7 8 7s5-2 8-7" stroke="#b4605f" stroke-width="3" stroke-linecap="round" fill="none" />
+</svg>

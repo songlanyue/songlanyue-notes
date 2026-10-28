@@ -173,4 +173,27 @@
       img.alt = img.alt || '图片加载失败';
     });
   });
+  /* ---------------- 7. 首屏景深视差 ---------------- */
+  (function () {
+    var hero = document.querySelector('.hero');
+    if (!hero || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var raf = null;
+    function set(x, y) {
+      hero.style.setProperty('--px', x.toFixed(1) + 'px');
+      hero.style.setProperty('--py', y.toFixed(1) + 'px');
+    }
+
+    hero.addEventListener('pointermove', function (e) {
+      if (raf) return;
+      raf = requestAnimationFrame(function () {
+        raf = null;
+        var r = hero.getBoundingClientRect();
+        set(((e.clientX - r.left) / r.width - 0.5) * -30,
+            ((e.clientY - r.top) / r.height - 0.5) * -20);
+      });
+    });
+
+    hero.addEventListener('pointerleave', function () { set(0, 0); });
+  })();
 })();
