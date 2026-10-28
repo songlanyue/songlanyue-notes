@@ -336,7 +336,7 @@ html[data-theme="light"] .icon-sun { display: none; }
   background-size: cover;
   background-position: center;
   filter: blur(14px) saturate(115%);
-  opacity: .13;
+  opacity: .19;
   -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 30%, transparent 70%);
   mask-image: radial-gradient(circle at 50% 50%, #000 30%, transparent 70%);
   mix-blend-mode: screen;
@@ -349,24 +349,24 @@ html[data-theme="light"] .icon-sun { display: none; }
 .deco-a {
   width: 44vw; height: 44vw;
   left: -14vw; top: 10vh;
-  background-image: url("../assets/deco/deco1.jpg");
+  background: radial-gradient(circle at 38% 34%, #8d9bf0 0%, #5b6dd0 34%, rgba(58, 70, 158, 0.55) 58%, rgba(38, 46, 110, 0) 74%);
   --k: 1;
 }
 
 .deco-b {
   width: 30vw; height: 30vw;
   right: 1vw; top: 20vh;
-  background-image: url("../assets/deco/deco2.jpg");
+  background: radial-gradient(circle at 45% 40%, #ffc978 0%, #e8963a 30%, rgba(184, 106, 32, 0.5) 58%, rgba(120, 66, 16, 0) 74%);
   --k: -1.5;
-  opacity: .11;
+  opacity: .15;
 }
 
 .deco-c {
   width: 26vw; height: 26vw;
   right: 26vw; bottom: -12vh;
-  background-image: url("../assets/deco/deco3.jpg");
+  background: radial-gradient(circle at 52% 46%, #6fc3d8 0%, #327f9c 34%, rgba(34, 86, 110, 0.5) 58%, rgba(18, 48, 66, 0) 74%);
   --k: .8;
-  opacity: .09;
+  opacity: .13;
 }
 
 @media (max-width: 760px) {
