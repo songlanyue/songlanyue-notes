@@ -1231,13 +1231,20 @@ html[data-theme="light"] .card:hover { background: #ffffff; }
 .footer-beian {
   margin-top: 14px;
   padding-bottom: 4px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 18px;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.08em;
 }
 
 .footer-beian a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   color: var(--muted);
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -1247,6 +1254,12 @@ html[data-theme="light"] .card:hover { background: #ffffff; }
 .footer-beian a:hover {
   color: var(--amber);
   border-bottom-color: var(--amber);
+}
+
+.beian-icon {
+  flex: 0 0 auto;
+  opacity: .85;
+  transform: translateY(-0.5px);
 }
 
 /* ---------- 回到顶部 ---------- */
