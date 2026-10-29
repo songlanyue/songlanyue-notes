@@ -1258,7 +1258,13 @@ html[data-theme="light"] .card:hover { background: #ffffff; }
 
 .beian-icon {
   flex: 0 0 auto;
-  opacity: .85;
+  width: 13px;
+  height: 14px;
+  padding: 1px;
+  background: #fff;
+  border-radius: 2px;
+  box-sizing: content-box;
+  opacity: .92;
   transform: translateY(-0.5px);
 }
 
