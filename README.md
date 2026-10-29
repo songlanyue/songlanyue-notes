@@ -41,7 +41,9 @@
 │   └── main.js         # 主题切换、移动端菜单、滚动高亮、渐显动效
 ├── assets/
 │   ├── favicon.svg     # 站点图标
-│   └── avatar.svg      # 头像插画（矢量，可替换为 jpg/png）
+│   ├── avatar.svg      # 头像插画（矢量，可替换为 jpg/png）
+│   ├── mascot.svg      # 吉祥物（联系区右下角，纯手写 SVG）
+│   └── beian.png       # 公安备案标准图标（36×40，来自公安部下发）
 └── README.md           # 本文件
 ```
 
