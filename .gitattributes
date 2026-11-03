@@ -1,0 +1,13 @@
+# 统一换行符，避免 Windows 提交的 CRLF 在 Linux 服务器上出现多余改动
+* text=auto eol=lf
+
+# 二进制文件不做换行转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.zip binary
+*.woff binary
+*.woff2 binary
