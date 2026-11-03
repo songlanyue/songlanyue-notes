@@ -33,7 +33,7 @@
 ## 三、目录结构
 
 ```
-网站源码/
+songlanyue-notes/
 ├── index.html          # 页面结构（唯一入口）
 ├── css/
 │   └── style.css       # 全部样式，含深色模式与响应式
@@ -44,6 +44,12 @@
 │   ├── avatar.svg      # 头像插画（矢量，可替换为 jpg/png）
 │   ├── mascot.svg      # 吉祥物（联系区右下角，纯手写 SVG）
 │   └── beian.png       # 公安备案标准图标（36×40，来自公安部下发）
+├── docs/               # 项目文档
+│   ├── 01-作品展示.md   # 成品说明与截图清单
+│   ├── 02-网站规划.md   # 需求、信息架构、设计决策
+│   ├── 03-部署步骤记录.md # 从买服务器到备案的完整过程
+│   └── images/         # 文档配图
+├── .gitignore
 └── README.md           # 本文件
 ```
 
@@ -97,11 +103,15 @@ nginx -t && systemctl reload nginx
 
 ## 七、更新与版本管理
 
+本项目使用 Git 管理，代码与文档在同一个仓库：
+
 ```bash
 git add .
 git commit -m "feat: 更新作品板块内容"
 git push origin main
 ```
+
+提交信息遵循 `<类型>: <说明>` 的格式，类型取 `feat`（新功能）、`fix`（修复）、`docs`（文档）、`style`（样式调整）、`chore`（杂项）。
 
 服务器端：
 
