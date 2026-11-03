@@ -1401,3 +1401,81 @@ html[data-theme="light"] .card:hover { background: #ffffff; }
   .reveal { opacity: 1; transform: none; }
   .section { padding: 24px 0; }
 }
+
+/* =========================================================
+   首屏背景图（AI 生成插画）与版权标注
+   ========================================================= */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(90deg, rgba(5, 7, 10, .93) 0%, rgba(5, 7, 10, .72) 46%, rgba(5, 7, 10, .58) 100%),
+    linear-gradient(180deg, rgba(5, 7, 10, .55) 0%, rgba(5, 7, 10, .2) 45%, rgba(5, 7, 10, .92) 100%),
+    url("../assets/hero-bg.webp");
+  background-size: cover, cover, cover;
+  background-position: center, center, center 38%;
+  background-repeat: no-repeat;
+  filter: saturate(.82) contrast(1.06);
+  pointer-events: none;
+}
+
+html[data-theme="light"] .hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(247, 249, 252, .96) 0%, rgba(247, 249, 252, .86) 42%, rgba(247, 249, 252, .58) 100%),
+    linear-gradient(180deg, rgba(247, 249, 252, .78) 0%, rgba(247, 249, 252, .38) 45%, rgba(247, 249, 252, .97) 100%),
+    url("../assets/hero-bg.webp");
+  filter: saturate(.66) brightness(1.08);
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-deco {
+  z-index: 1;
+}
+
+/* 首屏右下角的来源标注 */
+.hero-credit {
+  position: absolute;
+  right: 24px;
+  bottom: 18px;
+  z-index: 2;
+  margin: 0;
+  max-width: 60%;
+  text-align: right;
+  font-size: 11.5px;
+  line-height: 1.7;
+  letter-spacing: .02em;
+  color: var(--muted);
+  opacity: .85;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .45);
+}
+
+html[data-theme="light"] .hero-credit {
+  text-shadow: none;
+}
+
+/* 页脚版权说明 */
+.footer-credit {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 20px 18px;
+  text-align: center;
+  font-size: 11.5px;
+  line-height: 1.85;
+  color: var(--muted);
+  opacity: .82;
+}
+
+@media (max-width: 640px) {
+  .hero-credit {
+    position: static;
+    max-width: none;
+    margin-top: 26px;
+    text-align: left;
+  }
+}
