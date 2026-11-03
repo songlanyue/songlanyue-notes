@@ -7,6 +7,8 @@
 
 ---
 
+> 源码仓库：<https://github.com/songlanyue/songlanyue-notes>
+> 线上地址：<https://songlanyue.xyz>
 ## 一、项目简介
 
 这是一个单页个人网站，包含「首页 / 关于我 / 技能 / 作品 / 经历 / 联系」六个板块，用于展示个人介绍、
