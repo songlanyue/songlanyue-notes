@@ -123,6 +123,22 @@ cd /var/www/mywebsite && git pull origin main
 
 静态文件无需重启 Nginx，浏览器刷新即可生效；若被浏览器缓存影响，可 `Ctrl + F5` 强制刷新。
 
+### 改动流程（每次修改都必须走完）
+
+本项目的原则是**仓库是唯一事实来源**，服务器只是部署目标：
+
+```
+修改 web/ 下的文件  →  git commit  →  git push  →  再部署到服务器
+```
+
+1. **先改本地**：在 `web/` 目录里改代码或文档，不要在服务器上直接改文件——否则仓库与线上不一致，版本记录就失真了。
+2. **提交**：`git add -A && git commit -m "feat: 改动说明"`，提交信息写清「改了什么、为什么改」。
+3. **推送**：`git push origin main`，改动记录同步到 https://github.com/songlanyue/songlanyue-notes 。
+4. **部署**：`scp` 覆盖改动文件后 `systemctl reload nginx`，或在服务器上 `git pull`。
+5. **验证**：`curl -I https://songlanyue.xyz/` 确认 200，并检查改动点是否生效。
+
+这样每一次改动都对应仓库里的一条提交记录，线上任何一版都能追溯到具体提交。
+
 ## 八、常见问题
 
 - **打开后样式错乱**：确认 `css/`、`js/`、`assets/` 与 `index.html` 的相对位置没有改变。
