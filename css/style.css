@@ -1475,7 +1475,7 @@ html[data-theme="light"] .hero-credit {
   .hero-credit {
     position: static;
     max-width: none;
-    margin-top: 26px;
+    margin: 26px 18px 0;
     text-align: left;
   }
 }
