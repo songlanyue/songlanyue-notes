@@ -34,7 +34,11 @@
 
   var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
   // 站点默认深色工业风；用户手动切换过则尊重其选择
-  applyTheme(readSavedTheme() || 'dark');
+  // 也支持用 ?theme=light / ?theme=dark 直接指定（便于分享指定主题的链接）
+  var urlTheme = new URLSearchParams(location.search).get('theme');
+  applyTheme(
+    urlTheme === 'light' || urlTheme === 'dark' ? urlTheme : (readSavedTheme() || 'dark')
+  );
 
   if (themeToggle) {
     themeToggle.addEventListener('click', function () {

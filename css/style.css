@@ -1423,10 +1423,10 @@ html[data-theme="light"] .card:hover { background: #ffffff; }
 
 html[data-theme="light"] .hero::before {
   background-image:
-    linear-gradient(90deg, rgba(247, 249, 252, .96) 0%, rgba(247, 249, 252, .86) 42%, rgba(247, 249, 252, .58) 100%),
-    linear-gradient(180deg, rgba(247, 249, 252, .78) 0%, rgba(247, 249, 252, .38) 45%, rgba(247, 249, 252, .97) 100%),
+    linear-gradient(90deg, rgba(247, 249, 252, .95) 0%, rgba(247, 249, 252, .84) 34%, rgba(247, 249, 252, .40) 62%, rgba(247, 249, 252, .30) 100%),
+    linear-gradient(180deg, rgba(247, 249, 252, .62) 0%, rgba(247, 249, 252, .22) 46%, rgba(247, 249, 252, .9) 100%),
     url("../assets/hero-bg.webp");
-  filter: saturate(.66) brightness(1.08);
+  filter: saturate(.72) brightness(1.02);
 }
 
 .hero > .container {
